@@ -20,8 +20,15 @@
 
 .nav_logo,
 .nav_toggle{
-    color: var(--title-color);
-    font-weight: var(--font-medium);
+    /* color: var(--title-color);
+    font-weight: var(--font-medium); */
+}
+
+.logo{
+    width: 75px; 
+    height: auto;
+    border-radius: 50%; 
+    object-fit: cover; /* Ensures the image covers the area */
 }
 
 .nav_list{
@@ -121,6 +128,10 @@
     .nav_toggle{
         display: block;
     }
+
+    .logo{
+        width: 35px; 
+    }
 }
 
 .scroll-header{
@@ -136,4 +147,6 @@
     .nav_list{
         column-gap: 0;
     }
+
+
 }
