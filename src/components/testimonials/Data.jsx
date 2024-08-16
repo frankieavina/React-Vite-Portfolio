@@ -1,27 +1,27 @@
-import Image1 from "../../assets/testimonial1.png";
-import Image2 from "../../assets/testimonial2.png";
-import Image3 from "../../assets/testimonial3.png";
+import Image1 from "../../assets/work1.jpg";
+import Image2 from "../../assets/lupe.jpg";
+import Image3 from "../../assets/javi.jpeg";
 
 export const Data = [
     {
         id: 1,
-        image: Image1,
-        title: "Jhon Doe",
+        image: Image2,
+        title: "Guadalupe Gallardo",
         description:
-        "A really good job, all aspects of the project were followed step by step and with good results.",
+        "Frankie's attention to detail and technical prowess helped us launch a successful site for my company. They were communicative throughout the process and delivered beyond our expectations!",
     },
     {
         id: 2,
-        image: Image2,
-        title: "Harry Clinton",
+        image: Image1,
+        title: "Jessica Martinez",
         description:
-        "A really good job, all aspects of the project were followed step by step and with good results.",
+        "Excellent work! All site requirements were met with outstanding results. I look forward to working together further in the future.",
     },
     {
         id: 3,
         image: Image3,
-        title: "Sara Cill",
+        title: "Javier Guerra",
         description:
-        "A really good job, all aspects of the project were followed step by step and with good results.",
+        "Frankie is extremely talented at full stack engineering.",
     },
 ];

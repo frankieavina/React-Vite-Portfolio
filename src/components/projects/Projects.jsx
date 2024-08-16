@@ -4,13 +4,30 @@ import ProjectPic1 from '../../assets/projectPic1.png'
 import ProjectPic2 from '../../assets/projectPic2.png'
 import ProjectPic3 from '../../assets/projectPic3.png'
 
+import VideoModal from './VideoModal'
+
+import video3 from '../../assets/videoWC3.mov'
+
 const Projects = () => {
 
     const [ toggleState, setToggleState] = useState(0);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [currentVideo, setCurrentVideo] = useState(null);
 
     const toggleTab = (index) =>{
         setToggleState(index);
     }
+
+    const openModal = (videoSrc) => {
+        setCurrentVideo(videoSrc);
+        setIsModalOpen(true);
+      };
+    
+      const closeModal = () => {
+        setIsModalOpen(false);
+        setCurrentVideo(null);
+      };
+
   return (
     <section className="projects section" id='projects'>
         <h2 className="section_title">Projects</h2>
@@ -39,14 +56,18 @@ const Projects = () => {
                             for enhanced care.                        
                         
                         </p>
-                        <a href="#contact" className="button button--flex">
-                            Github
-                            <i className="uil uil-github-alt"></i>
-                        </a>
-                        <a href="#contact" className="button button--flex">
-                            Say Hello
-                            <i className="uil uil-github-alt"></i>
-                        </a>
+
+                        <div className="button-containers">
+                            <a target='_blank' href="https://github.com/frankieavina/diabuddy-frontend.git" className="button button-modal button--flex">
+                                Github
+                                <i className="uil uil-github-alt"></i>
+                            </a>
+                            <a onClick={(e)=> { e.preventDefault(); openModal(video3); }} href='/' className="button button-modal button--flex">
+                                Demo
+                                <i className='bx bx-camera-movie'></i>
+                            </a>                        
+                        </div>
+
                         <ul className="services_modal-services grid">
                             <li className="services_modal-service">
                                 <i className="uil uil-check-circle services_modal-icon"></i>
@@ -102,6 +123,14 @@ const Projects = () => {
                             Built a Discord bot and implement some functionalities that would later be incorporated 
                             into future classes to facilitate taking role as well moderating the channel. 
                         </p>
+
+                        <div className="button-containers">
+                            <a target='_blank' href="https://github.com/frankieavina/BVT_Discord_Bot_V1.0.git" className="button button-modal button--flex">
+                                Github
+                                <i className="uil uil-github-alt"></i>
+                            </a>                       
+                        </div>
+
                         <ul className="services_modal-services grid">
                             <li className="services_modal-service">
                                 <i className="uil uil-check-circle services_modal-icon"></i>
@@ -151,6 +180,18 @@ const Projects = () => {
                             Created a place where content creators for WorldCarft 3 can share there 
                             creativity and keep the Community alive.
                         </p>
+
+                        <div className="button-containers">
+                            <a target='_blank' href="https://github.com/bertman12/Warcraft-Legends.git" className="button button-modal button--flex">
+                                Github
+                                <i className="uil uil-github-alt"></i>
+                            </a>
+                            <a onClick={(e)=> { e.preventDefault(); openModal(video3); }} href='/' className="button button-modal button--flex">
+                                Demo
+                                <i className='bx bx-camera-movie'></i>
+                            </a>                        
+                        </div>
+
                         <ul className="services_modal-services grid">
                             <li className="services_modal-service">
                                 <i className="uil uil-check-circle services_modal-icon"></i>
@@ -194,6 +235,9 @@ const Projects = () => {
                 </div>
             </div> 
         </div>
+
+        <VideoModal videoSrc={currentVideo} isOpen={isModalOpen} onClose={closeModal} />
+
     </section>
   )
 }

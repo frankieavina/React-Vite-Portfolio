@@ -11,7 +11,7 @@ function Qualification() {
     
 
   return (
-    <section className="qualification section">
+    <section className="qualification section" id='qualifications'>
         <h2 className="section_title">Qualification</h2>
         <span className="section_subtitle">My Personal Journey</span>
 
@@ -37,40 +37,25 @@ function Qualification() {
 {/* // --------------------------------------------------------------------------------------------// */}
                     <div className="qualification_data">
                         <div>
-                            <h3 className="qualification_title">Web Design</h3>
-                            <span className="qualification_subtitle">Spain - Institute</span>
+                            <h3 className="qualification_title">Computer Engineering</h3>
+                            <span className="qualification_subtitle">Fresno - CSUF</span>
                             <div className="qualification_calender">
-                                <i className="uil uil-calendar-alt"></i>2021 - Present
+                                <i className="uil uil-calendar-alt"></i>2011 - 2016
                             </div>
                         </div>
 
                         <div>
                             <span className="qualification_rounder"></span>
                             <span className="qualification_line"></span>
-                        </div>
-                    </div>
-
-                    <div className="qualification_data">
-                        <div></div>
-                        <div>
-                            <span className="qualification_rounder"></span>
-                            <span className="qualification_line"></span>
-                        </div>
-                        <div>
-                            <h3 className="qualification_title">Art Director</h3>
-                            <span className="qualification_subtitle">Spain - Institute</span>
-                            <div className="qualification_calender">
-                                <i className="uil uil-calendar-alt"></i>2020 - 2021
-                            </div>
                         </div>
                     </div>
 {/* //---------------------------------------------------------------------------------------------// */}
                     <div className="qualification_data">
                         <div>
                             <h3 className="qualification_title">Web Development</h3>
-                            <span className="qualification_subtitle">Spain - Institute</span>
+                            <span className="qualification_subtitle">Modesto - BVT Academy</span>
                             <div className="qualification_calender">
-                                <i className="uil uil-calendar-alt"></i>2018 - 2020
+                                <i className="uil uil-calendar-alt"></i>2019 - 2020
                             </div>
                         </div>
 
@@ -87,10 +72,55 @@ function Qualification() {
                             <span className="qualification_line"></span>
                         </div>
                         <div>
-                            <h3 className="qualification_title">UX Expert</h3>
-                            <span className="qualification_subtitle">Spain - Institute</span>
+                            <h3 className="qualification_title">Web Developer Intern</h3>
+                            <span className="qualification_subtitle">Modesto - BVT</span>
                             <div className="qualification_calender">
-                                <i className="uil uil-calendar-alt"></i>2017 - 2018
+                                <i className="uil uil-calendar-alt"></i>2020 - 2020
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="qualification_data">
+                        <div></div>
+                        <div>
+                            <span className="qualification_rounder"></span>
+                            <span className="qualification_line"></span>
+                        </div>
+                        <div>
+                            <h3 className="qualification_title">Junior MES Engineer</h3>
+                            <span className="qualification_subtitle">Modesto - Gallo Wineries</span>
+                            <div className="qualification_calender">
+                                <i className="uil uil-calendar-alt"></i>2021 - 2021
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="qualification_data">
+                        <div>
+                            <h3 className="qualification_title">React Development</h3>
+                            <span className="qualification_subtitle">Fresno - Bitwise</span>
+                            <div className="qualification_calender">
+                                <i className="uil uil-calendar-alt"></i>2021 - 2021
+                            </div>
+                        </div>
+
+                        <div>
+                            <span className="qualification_rounder"></span>
+                            <span className="qualification_line"></span>
+                        </div>
+                    </div>
+
+                    <div className="qualification_data">
+                        <div></div>
+                        <div>
+                            <span className="qualification_rounder"></span>
+                            <span className="qualification_line"></span>
+                        </div>
+                        <div>
+                            <h3 className="qualification_title">Software Engineer</h3>
+                            <span className="qualification_subtitle">Fresno - Bitwise Industries</span>
+                            <div className="qualification_calender">
+                                <i className="uil uil-calendar-alt"></i>2022 - 2023
                             </div>
                         </div>
                     </div>
