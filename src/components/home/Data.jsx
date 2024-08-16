@@ -5,7 +5,7 @@ const Data = () => {
   return (
     <div className="home_data">
         <h1 className="home_title">
-            Frank Avina
+            Frankie Avina
             <svg
                   width="36"
                   height="36"
@@ -57,7 +57,8 @@ const Data = () => {
             </svg>
         </h1>
         <h3 className="home_subtitle">Software Developer</h3>
-        <p className="home_description">I'm creative designer based in California and I'm very passionate and dedicated to my work.</p>
+        <p className="home_description">Hi my name is Francisco Avina and I am a developer of the web enthusiastic about crafting seamless and engaging online experiences.
+        </p>
         <a href="#contact" className="button button--flex">
             Say Hello
             <svg

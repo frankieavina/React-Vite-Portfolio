@@ -44,6 +44,10 @@
     margin-bottom: var(--mb-2-5);
 }
 
+.button_icon{
+    margin-left: 10px;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {

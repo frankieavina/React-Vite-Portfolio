@@ -1,19 +1,32 @@
 import './contact.css'
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
   
 const Contact = () => {
     const form = useRef();
 
+    const [isBot, setIsBot] = useState(false);
+
     const sendEmail = (e) => {
         e.preventDefault();
     
+        // handling bot submission (honeypot technique)
+        if(isBot){
+            return;
+        }
+
         emailjs
           .sendForm('service_qpavsqt', 'template_p9fh3ww', form.current, {
             publicKey: 'dJQBae5u39iA-fb91',
           })
           e.target.reset()
     };
+
+    const handleChange = (e) => {
+        if (e.target.name === "hiddenField" && e.target.value) {
+          setIsBot(true);
+        }
+      };
 
   return (
     <section className="contact section" id="contact">
@@ -22,11 +35,11 @@ const Contact = () => {
 
         <div className="contact_container container grid">
             <div className="contact_content">
-                <h3 className="contact_title">Talk To Me</h3>
+                <h3 className="contact_title">Connect</h3>
 
                 <div className="contact_info">
-                    {/* <div className="contact_card">
-                        <i className="bx bx contact_card-icon"></i>
+                    <div className="contact_card">
+                        <i className='bx bxl-linkedin-square' ></i>
 
                         <h3 className="contact_card-title">Linkedln</h3>
                         <span className="contact_card-data">linkeldn profile link</span>
@@ -35,7 +48,7 @@ const Contact = () => {
                             Write me{''}
                             <i className="bx bx-right-arrow-alt contact_button-icon"></i>
                         </a>
-                    </div> */}
+                    </div>
 
                     <div className="contact_card">
                         <i className="bx bx-mail-send contact_card-icon"></i>
@@ -52,7 +65,7 @@ const Contact = () => {
             </div>
 
             <div className="contact_content">
-                <h3 className="contact_title">Write me your project</h3>
+                <h3 className="contact_title">Lets Work Together</h3>
                 <form ref={form} onSubmit={sendEmail} className="contact_form">
 
                     <div className="contact_form-div">
@@ -69,6 +82,12 @@ const Contact = () => {
                         <label htmlFor="" className="contact_form-tag">Message</label>
                         <textarea name="project" cols='30' rows='10' className='contact_form-input' placeholder='Write your project'></textarea>
                     </div>
+                    <input
+                        type="text"
+                        name="hiddenField"
+                        style={{ display: "none" }}
+                        onChange={handleChange}
+                    />
                     <button className="button button--flex">
                         Send Message
                         <svg

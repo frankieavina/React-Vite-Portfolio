@@ -25,7 +25,7 @@
 }
 
 .home_title{
-    font-size: var(--big-font-size);
+    font-size: var(--h1-font-size);
     margin-bottom: var(--mb-0-25);
 }
 
@@ -60,7 +60,7 @@
 }
 
 .home_img{
-    background: url(../../assets/profile.jpg);
+    background: url(../../assets/profilePic.jpeg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

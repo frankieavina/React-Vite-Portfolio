@@ -1,6 +1,6 @@
 import './about.css';
-import AboutImg from '../../assets/about.jpg';
-import CV from '../../assets/John-Cv.pdf'
+import AboutImg from '../../assets/selfPic.jpeg';
+import Resume from '../../assets/favina-software-engineer-8-12-24.pdf'
 import Info from './Info';
 
 const About = () => {
@@ -14,11 +14,19 @@ const About = () => {
             <div className="about_data">
                 <Info/>
                 <p className="about_description">
-                    Frontend developer, I create web pages with UI/UX user interface, I have years
-                    of experience and many clients are happy with the projects carried out. 
+                    I'm passionate application developer and computer engineer with a career that began in 2010. 
+                    Throughout my journey, I've acquired extensive knowledge in computer architecture and had 
+                    the opportunity to collaborate with esteemed companies such as Bay Valley Tech, E&J Gallo 
+                    Winery, and Bitwise to create exceptional web applications. I am continuously expanding my 
+                    expertise in this dynamic and ever-evolving field.
+
+                    As a Frontend and Backend Developer, I'm committed to crafting unique digital experiences. 
+                    Outside of work, I'm a car enthusiast, fisherman, and food connoisseur, always in search of
+                    new adventures. I believe in working magic through technology, and I'm excited to share my 
+                    journey with you.
                 </p>
-                <a download='' href={CV} className="button button--flex">
-                    Download CV
+                <a download='' href={Resume} className="button button--flex">
+                    Resume
                     <svg
                         className="button__icon"
                         xmlns="http://www.w3.org/2000/svg"
