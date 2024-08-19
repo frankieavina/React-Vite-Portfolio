@@ -8,7 +8,7 @@ const VideoModal = ({ videoSrc, isOpen, onClose }) => {
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         
-        <video width="600" controls autoPlay>
+        <video width="600" height='750' controls autoPlay>
           <source src={videoSrc} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
