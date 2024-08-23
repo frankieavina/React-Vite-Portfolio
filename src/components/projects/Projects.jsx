@@ -6,9 +6,6 @@ import ProjectPic3 from '../../assets/projectPic3.png'
 
 import VideoModal from './VideoModal'
 
-import video3 from '../../assets/videoWC3.mov'
-import video1 from '../../assets/diabuddyVid.mp4'
-
 const Projects = () => {
 
     const [ toggleState, setToggleState] = useState(0);
@@ -63,7 +60,7 @@ const Projects = () => {
                                 Github
                                 <i className="uil uil-github-alt"></i>
                             </a>
-                            <a onClick={(e)=> { e.preventDefault(); openModal(video1); }} href='/' className="button button-modal button--flex">
+                            <a onClick={(e)=> { e.preventDefault(); openModal(1); }} href='/' className="button button-modal button--flex">
                                 Demo
                                 <i className='bx bx-camera-movie'></i>
                             </a>                        
@@ -187,7 +184,7 @@ const Projects = () => {
                                 Github
                                 <i className="uil uil-github-alt"></i>
                             </a>
-                            <a onClick={(e)=> { e.preventDefault(); openModal(video3); }} href='/' className="button button-modal button--flex">
+                            <a onClick={(e)=> { e.preventDefault(); openModal(3); }} href='/' className="button button-modal button--flex">
                                 Demo
                                 <i className='bx bx-camera-movie'></i>
                             </a>                        
