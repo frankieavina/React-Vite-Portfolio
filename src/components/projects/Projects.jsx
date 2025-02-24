@@ -44,6 +44,7 @@ const Projects = () => {
                     View More <i className="uil uil-arrow-right service_button-icon"></i>
                 </span>
 
+                
                 <div className={toggleState === 1 ? 'services_modal active-modal' : 'services_modal'}>
                     <div className="services_modal-content">
                         <i onClick={ () => toggleTab(0) } className="uil uil-times services_modal-close"></i>

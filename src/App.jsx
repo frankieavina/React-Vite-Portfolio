@@ -10,6 +10,7 @@ import Footer from './components/footer/Footer'
 import Scrollup from './components/scrollup/Scrollup'
 import Projects from './components/projects/Projects'
 import Work from './components/work/Work'
+import Services from './components/services/Services'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
         <Home/>
         <About/>
         <Skills/>
+        <Services/>
         <Projects/>
         <Work/>
         <Qualification/>
